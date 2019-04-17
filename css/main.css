@@ -67,7 +67,7 @@ button:active {
   margin-top: 60px;
 }
 #question {
-   /* display: none; */
+   display: none;
    color: red;
    text-align: center;
    font-family: 'ZCOOL QingKe HuangYou', cursive;
@@ -87,9 +87,7 @@ button:active {
   color: darkgrey;
 }
 
-#proceed{
-  display: none;
-}
+
 
 /* #form {
   display: block;
