@@ -31,7 +31,7 @@ document.querySelectorAll('.emoji').forEach(function(btn) {
       currSession = {session: session, before: parseInt(target.dataset.mood), after: null};
       eSession.innerHTML = `Session: ${session}, Status: AFTER`;
       showMessage('Please proceed through the curtain.');
-    
+
     }
     else {
       currSession.after = parseInt(target.dataset.mood);
@@ -54,9 +54,9 @@ function showMessage(msg) {
 }
 
 btnProceed.addEventListener('click', function() {
-  document.getElementById('msg').style.display = "none";
+  document.getElementById('message').style.display = "none";
   theMsg.innerHTML = msg;
-  document.getElementById('question').style.display = "block";
+  document.getElementById('msg').style.display = "block";
   // hide #message
   // show #quesion
 });
