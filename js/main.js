@@ -31,6 +31,7 @@ document.querySelectorAll('.emoji').forEach(function(btn) {
       currSession = {session: session, before: parseInt(target.dataset.mood), after: null};
       eSession.innerHTML = `Session: ${session}, Status: AFTER`;
       showMessage('Please proceed through the curtain.');
+    
     }
     else {
       currSession.after = parseInt(target.dataset.mood);
