@@ -7,19 +7,21 @@ body {
 }
 
 
-body {
-  background-color: lavender;
-}
+/* body {
+  background-color: darkgrey;
+  background-image: url(img/Watch-logo-word.png);
 
-.home{
-  color: grey;
+} */
+
+/* .home{
+  color: red;
   font-family: 'ZCOOL QingKe HuangYou', cursive;
   font-size: 15px;
-}
+} */
 
 
 h1 {
-  color: grey;
+  color: red;
   text-align: center;
   font-family: 'ZCOOL QingKe HuangYou', cursive;
   font-size: 50px;
@@ -37,17 +39,18 @@ h1 {
   margin: 25px;
 }
 button {
-  background-color: lavender;
+  background-color: #a1b2b1;
   border: none;
   text-align: center;
   font-size: 100px;
-  border-radius: 45%;
+  border-radius: 25%;
   border-color: lavender;
   outline: none;
   cursor: pointer;
 }
 button:active {
-  background-color: lightblue;
+  background-color: darkgrey;
+
 }
 .main {
   text-align: center;
@@ -57,15 +60,15 @@ button:active {
 
 #message {
   display: block;
-  color: grey;
+  color: red;
   text-align: center;
   font-family: 'ZCOOL QingKe HuangYou', cursive;
   font-size: 50px;
   margin-top: 60px;
 }
 #question {
-   display: none;
-   color: grey;
+   /* display: none; */
+   color: red;
    text-align: center;
    font-family: 'ZCOOL QingKe HuangYou', cursive;
    font-size: 50px;
@@ -73,7 +76,7 @@ button:active {
 }
 
 #msg {
-  color: grey;
+  color: red;
   text-align: center;
   font-family: 'ZCOOL QingKe HuangYou', cursive;
   font-size: 50px;
@@ -81,7 +84,11 @@ button:active {
 }
 
 #session {
-  color: lavender;
+  color: darkgrey;
+}
+
+#proceed{
+  display: none;
 }
 
 /* #form {
