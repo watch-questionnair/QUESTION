@@ -6,6 +6,90 @@ body {
   background-color: #a1b2b1;
 }
 
-button {
-  color: white;
+
+body {
+  background-color: lavender;
 }
+
+.home{
+  color: grey;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 15px;
+}
+
+
+h1 {
+  color: grey;
+  text-align: center;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 50px;
+  margin-top: 60px;
+}
+
+.emojichoices {
+  font-size: 100px;
+  padding: 0;
+  text-align: center;
+}
+
+.emoji{
+  display: inline-block;
+  margin: 25px;
+}
+button {
+  background-color: lavender;
+  border: none;
+  text-align: center;
+  font-size: 100px;
+  border-radius: 45%;
+  border-color: lavender;
+  outline: none;
+  cursor: pointer;
+}
+button:active {
+  background-color: lightblue;
+}
+.main {
+  text-align: center;
+  display: inline-block;
+  margin-top: 100px;
+}
+
+#message {
+  display: block;
+  color: grey;
+  text-align: center;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 50px;
+  margin-top: 60px;
+}
+#question {
+   display: none;
+   color: grey;
+   text-align: center;
+   font-family: 'ZCOOL QingKe HuangYou', cursive;
+   font-size: 50px;
+   margin-top: 60px;
+}
+
+#msg {
+  color: grey;
+  text-align: center;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 50px;
+  margin-top: 60px;
+}
+
+#session {
+  color: lavender;
+}
+
+/* #form {
+  display: block;
+}
+
+
+
+#data {
+  display: block;
+} */
