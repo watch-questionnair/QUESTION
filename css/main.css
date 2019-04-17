@@ -76,6 +76,7 @@ button:active {
 }
 
 #msg {
+  display: none;
   color: red;
   text-align: center;
   font-family: 'ZCOOL QingKe HuangYou', cursive;
@@ -87,6 +88,14 @@ button:active {
   color: darkgrey;
 }
 
+#proceed {
+  color: darkred;
+  text-align: center;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 40px;
+  margin-top: 40px;
+
+}
 
 
 /* #form {

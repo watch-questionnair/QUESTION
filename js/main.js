@@ -45,17 +45,20 @@ document.querySelectorAll('.emoji').forEach(function(btn) {
 
 
 function showMessage(msg) {
-  // hide #question
+  document.getElementById('question').style.display = "none";
   theMsg.innerHTML = msg;
+  document.getElementById('msg').style.display = "inline";
   // show #message
 
 }
 
 btnProceed.addEventListener('click', function() {
+  document.getElementById('msg').style.display = "none";
+  theMsg.innerHTML = msg;
+  document.getElementById('question').style.display = "block";
   // hide #message
   // show #quesion
 });
-
 
 showMessage('Welcome to WATCH');
 
