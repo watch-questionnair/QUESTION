@@ -38,7 +38,7 @@ document.querySelectorAll('.emoji').forEach(function(btn) {
       eSession.innerHTML = `Session: ${++session}, Status: BEFORE`;
       currSession = false;
       saveData();
-      showMessage('Welcome to WATCH');
+      showMessage('Welcome to' + 'logo');
     }
   });
 });
@@ -51,46 +51,23 @@ function showMessage(msg) {
 
 }
 
+function showMessage(logo) {
+  // hide #question
+  theMsg.innerHTML = logo;
+  // show #message
+
+}
+
 btnProceed.addEventListener('click', function() {
   // hide #message
   // show #quesion
 });
 
 
-showMessage('Welcome to WATCH');
+showMessage('Welcome to' )
 
 
 
+var _logo = document.getElementById('logo');
 
-//
-// function callPlan(){
-// function callPlan(){
-// //   var storedPlan = localStorage.getItem(currentDay + '6:00');
-//      var storedData = localStorage.getItem('1');
-// //   document.getElementById('6:00').value = storedPlan;
-//      document.getElementById('1').value = storedData;
-// //   var storedPlan = localStorage.getItem(currentDay + '6:30');
-//      var storedData = localStorage.getItem('2');
-// //   document.getElementById('6:30').value = storedPlan;
-//      document.getElementById('1').value = storedData;
-// // }
-// }
-// var myTripButton = document.getElementById('datetripb');
-// var myTripDay = document.getElementById('datetrip');
-//
-// function setTrip(){
-//   var myDay = prompt('Please enter your Trip.');
-//   localStorage.setItem('date', myDay);
-//   myTripDay.textContent = myDay
-// }
-//
-// if(!localStorage.getItem('date')) {
-//   setTrip();
-// } else {
-//   var storedDay = localStorage.getItem('date');
-//   myTripDay.textContent = storedDay;
-// }
-//
-// myTripButton.onclick = function() {
-//   setTrip();
-// }
+_logo.setAttribute('src','img/Watch-logo-word copy.png')
