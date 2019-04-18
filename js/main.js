@@ -64,10 +64,4 @@ btnProceed.addEventListener('click', function() {
 });
 
 
-showMessage('Welcome to' )
-
-
-
-var _logo = document.getElementById('logo');
-
-_logo.setAttribute('src','img/Watch-logo-word copy.png')
+showMessage('Welcome to <img src="img/Watch-logo-word copy.png" alt="">' )
