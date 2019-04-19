@@ -4,26 +4,25 @@ let currSession = false;
 const divQuestion = document.getElementById('question');
 const btnProceed = document.getElementById('proceed');
 const divMessage = document.getElementById('message');
-const theMsg = document.getElementById('msg');
+
+var btnGoToQ = document.getElementById('gotoquestion');
+var divAftermsg = document.getElementById('afterquestion');
+
+var btnEnd = document.getElementById('end');
+var divLastMessage = document.getElementById('lastmessage');
 
 let session = allData.length;
 const eSession = document.getElementById('session');
 eSession.innerHTML = `Session: ${session}, Status: BEFORE`;
 
 
-// function savePlan(){
+
 function saveData(){
-  //   var myDayPlan = document.getElementById('6:00').value;
-  //var moodButton = document.getElementById('1').value;
-  //   localStorage.setItem(currentDay + '6:00', myDayPlan);
+
   localStorage.setItem('data', JSON.stringify(allData));
-  //
-  //   var myDayPlan = document.getElementById('6:30').value;
-  //each place to store
-  //   localStorage.setItem(currentDay + '6:30', myDayPlan);
-  // }
+
 }
-// document.getElementById('savebutton').onclick = function() {
+
 document.querySelectorAll('.emoji').forEach(function(btn) {
   btn.addEventListener('click', function({target}) {
     console.log(target);
@@ -39,29 +38,54 @@ document.querySelectorAll('.emoji').forEach(function(btn) {
       eSession.innerHTML = `Session: ${++session}, Status: BEFORE`;
       currSession = false;
       saveData();
-      showMessage('Welcome to WATCH');
+      lastMessage();
     }
   });
 });
 
-
-function showMessage(msg) {
-  document.getElementById('question').style.display = "none";
-  theMsg.innerHTML = msg;
-  document.getElementById('msg').style.display = "inline";
-  // show #message
-
-}
-
-btnProceed.addEventListener('click', function() {
+btnProceed.addEventListener('click',
+function() {
   document.getElementById('message').style.display = "none";
-  theMsg.innerHTML = msg;
-  document.getElementById('msg').style.display = "block";
+
+  document.getElementById('question').style.display = "block";
   // hide #message
   // show #quesion
 });
 
-showMessage('Welcome to WATCH');
+function showMessage() {
+  document.getElementById('question').style.display = "none";
+
+  document.getElementById('afterquestion').style.display = "block";
+  // show #message
+
+}
+
+function afterQ() {
+  document.getElementById('afterquestion').style.display = "none";
+
+  document.getElementById('question').style.display = "block";
+  // show #message
+
+}
+
+function lastMessage() {
+  document.getElementById('question').style.display = "none";
+
+  document.getElementById('lastmessage').style.display = "block";
+  // show #message
+
+}
+
+btnEnd.addEventListener('click',
+function backTo() {
+  document.getElementById('lastmessage').style.display = "none";
+  document.getElementById('message').style.display = "block";
+});
+
+
+
+btnGoToQ.addEventListener('click', afterQ);
+
 
 
 

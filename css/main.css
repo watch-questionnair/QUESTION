@@ -75,7 +75,16 @@ button:active {
    margin-top: 60px;
 }
 
-#msg {
+#afterquestion {
+  display: none;
+  color: red;
+  text-align: center;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 50px;
+  margin-top: 60px;
+}
+
+#lastmessage {
   display: none;
   color: red;
   text-align: center;
