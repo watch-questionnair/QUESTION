@@ -27,6 +27,9 @@ h1 {
   font-size: 50px;
   margin-top: 60px;
 }
+img {
+  
+}
 
 .emojichoices {
   font-size: 100px;
@@ -105,3 +108,19 @@ button:active {
   margin-top: 40px;
 
 }
+
+ #gotoquestion {
+   color: darkred;
+   text-align: center;
+   font-family: 'ZCOOL QingKe HuangYou', cursive;
+   font-size: 40px;
+   margin-top: 40px;
+ }
+
+ #end {
+   color: darkred;
+   text-align: center;
+   font-family: 'ZCOOL QingKe HuangYou', cursive;
+   font-size: 40px;
+   margin-top: 40px;
+ }
